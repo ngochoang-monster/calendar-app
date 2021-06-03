@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+#container {
+    max-width: 1081px;
+    margin: 0 auto;
+}
+
+.box-calendar {
+    margin-top: 100px;
+    border: 1px solid red;
+    width: 572px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+    user-select: none;
+}
+
+.month {
+    display: flex;
+    align-items: center;
+
+}
+
+.month span {
+    margin: 0 8px;
+    line-height: 0;
+}
+
+.month span svg  {
+    width: 44px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.title-month {
+    line-height: 10px;
+}
+
+.year {
+    padding-right: 36px;
+    position: relative;
+}
+
+.editing {
+    visibility: hidden;
+}
+
+.year-input {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 86px;
+    font-size: 1.6em;
+    padding: 4px 6px;
+    outline: navy;
+    text-align: center;
+    display: none;
+}
+
+.active {
+    display: unset;
+}
+
+.calendar, .list-weekday {
+    display: grid;
+    grid-template-columns: 72px 72px 72px 72px 72px 72px 72px;
+    grid-template-rows: 52px 52px 52px 52px 52px;
+    padding: 8px 6px;
+    grid-row-gap: 10px;
+    grid-column-gap: 8.8px;
+}
+
+.box-day, .weekday-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: 1rem;
+}
+
+.list-weekday {
+    grid-template-rows: 52px;
+}
+
+
+.weekday-item {
+    list-style: none;
+    border: none;
+}

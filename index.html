@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div class="box-calendar">
+            <div class="header">
+                <div class="month">
+                    <span class="arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                        </svg></span>
+                    <h1 class="title-month"></h1>
+                    <span class="arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg></span>
+                </div>
+                <div class="year">
+                    <h1 class="title-year" title="Nháy chuột thay đổi"></h1>
+                    <input class="year-input" type="text" />
+                </div>
+            </div>
+            <div class="weekday">
+                <ul class="list-weekday">
+                    <li class="weekday-item">Thứ Hai</li>
+                    <li class="weekday-item">Thứ Ba</li>
+                    <li class="weekday-item">Thứ Tư</li>
+                    <li class="weekday-item">Thứ Năm</li>
+                    <li class="weekday-item">Thứ Sáu</li>
+                    <li class="weekday-item">Thứ Bảy</li>
+                    <li class="weekday-item">Chủ Nhât</li>
+                </ul>
+            </div>
+            <div class="calendar">
+                <!-- <div class="box-day"><span></span></div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
