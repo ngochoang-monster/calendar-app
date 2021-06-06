@@ -93,7 +93,12 @@ const App = {
             if (element.textContent === '') {
                 element.closest('.box-day').style.visibility = 'hidden'
             }
-        })
+            if (element.textContent === date.getDate().toString()
+                && month_current === date.getMonth()
+                && year_current === date.getFullYear()) {
+                element.closest('.box-day').classList.add('day-highlight')
+            }
+        });
     },
 
 
